@@ -32,7 +32,7 @@ param tag string = '<tagName>'
 param subscriptionId string = '<subscriptionId>'
 param DNSZoneresourceGroup string ='<resourceGroupName>'
 
-var logAnalyitcsID = <existingLogAnalyticsId>
+var logAnalyitcsID = '<existingLogAnalyticsId>'
 var eventHubID = '<existingEventHubId>'
 var eventHub = '<existingEventHubName>'
 var kvPvDnsZoneID = '<existingKeyVaultPrivateDNSZoneId>'
