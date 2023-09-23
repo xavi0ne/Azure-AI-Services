@@ -1,1 +1,1 @@
-# Azure-AI-Services
+Azure AI services help developers and organizations rapidly create intelligent, cutting-edge, market-ready, and responsible applications with out-of-the-box and pre-built and customizable APIs and models.
