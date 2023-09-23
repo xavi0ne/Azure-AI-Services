@@ -36,7 +36,7 @@ var logAnalyitcsID = <existingLogAnalyticsId>
 var eventHubID = '<existingEventHubId>'
 var eventHub = '<existingEventHubName>'
 var kvPvDnsZoneID = '<existingKeyVaultPrivateDNSZoneId>'
-var transPvDnsZoneID = <existingCognitiveServicesPrivateDNSZoneId>
+var transPvDnsZoneID = '<existingCognitiveServicesPrivateDNSZoneId>'
 var blobpvtDnsZoneID = '<existingBlobPrivateDNSZoneId>'
 
 module kv 'module-keyVault.bicep' = [ for (kv, i) in keyVaultDetails: {
