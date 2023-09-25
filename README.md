@@ -1,4 +1,4 @@
-#AZURE AI TRANSLATOR: Secure Text and Document Translation 
+# AZURE AI TRANSLATOR: Secure Text and Document Translation 
 
 Azure AI Translators is a Cloud-based neural machine translation service part of the Azure AI Services umbrella. 
 It's the muscle behind intelligent, multi-language operations for applications, with over 100 supported languages.
