@@ -9,19 +9,26 @@ BICEP TEMPLATES
 
 The ‘ai-translators-maindeploy.bicep’ template assumes that you are a US regulated entity with requirements for network isolation, access control, and least privilege security controls. For deployment to be successful, please ensure the following pre-requisites:
 
-  •	The AI Translators, key vault, and Storage Account should be deployed in the same Azure US Government region (example:      usgovvirginia).
-  •	Template assumes the following resources exist in the subscription prior to deployment. Please provide the resource IDs     for the following existing resources:
+  •	The AI Translators, key vault, and Storage Account should be deployed in the same Azure US Government region.
+  •	Template assumes the following resources exist in the subscription prior to deployment. Please provide the resource IDs for the following existing resources:
+  
       o	Log Analytics Workspace
       o	Event Hub
       o	Key Vault Private DNS Zone
       o	Translator Private DNS Zone
       o	Storage Account Blob Private DNS Zone
+      
   •	Template assumes a virtual network already exists and is linked to the private DNS zones. 
   •	Subnet ID parameter must pertain to the linked virtual network for each private DNS zone. 
-    Managed Identities
-    The AI Translator must have the following role assignment configured: 
+  
+MANAGED IDENTITIES
+    
+The AI Translator must have the following role assignment configured: 
+
   •	Storage Blob Data Contributor at resource scope
-    The Virtual Machine hosting the App must have the following role assignment configured:
+  
+The Virtual Machine hosting the App must have the following role assignment configured:
+
   •	Key Vault Secret User
 
 C# SAMPLES
