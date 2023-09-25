@@ -3,9 +3,9 @@
 Azure AI Translators is a Cloud-based neural machine translation service part of the Azure AI Services umbrella. 
 It's the muscle behind intelligent, multi-language operations for applications, with over 100 supported languages.
 
-##DETAILS
+## DETAILS
 
-###BICEP TEMPLATES
+### BICEP TEMPLATES
 
 The ‘ai-translators-maindeploy.bicep’ template assumes that you are a US regulated entity with requirements for network isolation, access control, and least privilege security controls. For deployment to be successful, please ensure the following pre-requisites:
 
@@ -21,7 +21,7 @@ The ‘ai-translators-maindeploy.bicep’ template assumes that you are a US reg
   +	Template assumes a virtual network already exists and is linked to the private DNS zones. 
   +	Subnet ID parameter must pertain to the linked virtual network for each private DNS zone. 
   
-###MANAGED IDENTITIES
+### MANAGED IDENTITIES
     
 The AI Translator must have the following role assignment configured: 
 
@@ -31,7 +31,7 @@ The Virtual Machine hosting the App must have the following role assignment conf
 
   +	Key Vault Secret User
 
-###C# SAMPLES
+### C# SAMPLES
 
 The ‘translator-text-app.cs’ assumes you have an existing AI Translator resource, an existing Key Vault, and the secret created for the translator key. For a successful run, please ensure the following pre-requisites:
 
