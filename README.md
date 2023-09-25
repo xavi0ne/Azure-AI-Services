@@ -42,8 +42,8 @@ The ‘translator-text-app.cs’ assumes you have an existing AI Translator reso
 
 The ‘multiple-document-translator.cs’ assumes you have an existing AI Translator resource, a Storage Account with Blob services, an existing Key Vault, and the secret created for the translator key. The Storage Account must also have a source container, a French container, an Arabic container, and a Spanish container created. For a successful run, please ensure the following pre-requisites:
 
-  •	Provide the FQDN (private endpoint) for the AI Translator.
-  •	Provide AI Translator’s existing location or region. 
-  •	Provide existing key vault URI.
-  •	Provide the secret name for the translator key.
-  •	Provide container URIs. 
+  +	Provide the FQDN (private endpoint) for the AI Translator.
+  +	Provide AI Translator’s existing location or region. 
+  +	Provide existing key vault URI.
+  +	Provide the secret name for the translator key.
+  +	Provide container URIs. 
