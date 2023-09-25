@@ -1,7 +1,4 @@
-using System;
-using System.Net.Http;
 using System.Text;
-using System.Threading.Tasks;
 using Azure.Identity;
 using Azure.Security.KeyVault.Secrets;
 using Newtonsoft.Json;
@@ -9,8 +6,8 @@ using Newtonsoft.Json;
 class Program
 {
     //for private endpoint configuration, add the private endpoint URI//
-    private static readonly string endpoint = "<AITranslatorFQDN>";
-    private static readonly string location = "<USGovRegion>";
+    private static readonly string endpoint = "<TranslatorPrivateEndpointURI>";
+    private static readonly string location = "<usgovLocation>";
 
     static async Task Main(string[] args)
     {
@@ -20,15 +17,15 @@ class Program
             SecretClient secretClient = new SecretClient(new Uri("<keyVaultURI>"), new DefaultAzureCredential());
 
             // Retrieve the Translator API access key from Key Vault.
-            KeyVaultSecret translatorApiSecret = await secretClient.GetSecretAsync("<TranslatorApiAccessKeySecretName>");
+            KeyVaultSecret translatorApiSecret = await secretClient.GetSecretAsync("<translatorKeySecretName>");
 
             string key = translatorApiSecret.Value;
-
-            Console.WriteLine($"Retrieved secret: {translatorApiSecret.Name} - {translatorApiSecret.Value}");
+            
+            //Add &profanityAction=Marked after the target language on the route to filter profanity with sensor.
 
             //ensure full route is added /translator/test/v3.0
-            string route = "/translator/text/v3.0/translate?api-version=3.0&from=en&to=sw&to=it";
-            string textToTranslate = "Hello, friend! What did you do today?";
+            string route = "/translator/text/v3.0/translate?api-version=3.0&from=en&to=es&to=it&profanityAction=Marked";
+            string textToTranslate = "I forgot to turn off the stove";
             object[] body = new object[] { new { Text = textToTranslate } };
             var requestBody = JsonConvert.SerializeObject(body);
 
