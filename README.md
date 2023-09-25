@@ -9,8 +9,8 @@ It's the muscle behind intelligent, multi-language operations for applications, 
 
 The ‘ai-translators-maindeploy.bicep’ template assumes that you are a US regulated entity with requirements for network isolation, access control, and least privilege security controls. For deployment to be successful, please ensure the following pre-requisites:
 
-  +The AI Translators, key vault, and Storage Account should be deployed in the same Azure US Government region.
-  +Template assumes the following resources exist in the subscription prior to deployment. Please provide the resource IDs for the following existing resources:
+  + The AI Translators, key vault, and Storage Account should be deployed in the same Azure US Government region.
+  + Template assumes the following resources exist in the subscription prior to deployment. Please provide the resource IDs for the following existing resources:
   
   +	Log Analytics Workspace
   +	Event Hub
