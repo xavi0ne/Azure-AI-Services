@@ -25,7 +25,7 @@ The ‘ai-translators-maindeploy.bicep’ template assumes that you are a US reg
     
 The AI Translator must have the following role assignment configured: 
 
-  +	Storage Blob Data Contributor at resource scope
+  +	Storage Blob Data Contributor at storage account resource scope
   
 The Virtual Machine hosting the App must have the following role assignment configured:
 
