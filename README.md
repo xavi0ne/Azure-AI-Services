@@ -12,11 +12,11 @@ The ‘ai-translators-maindeploy.bicep’ template assumes that you are a US reg
   •	The AI Translators, key vault, and Storage Account should be deployed in the same Azure US Government region.
   •	Template assumes the following resources exist in the subscription prior to deployment. Please provide the resource IDs for the following existing resources:
   
-      o	Log Analytics Workspace
-      o	Event Hub
-      o	Key Vault Private DNS Zone
-      o	Translator Private DNS Zone
-      o	Storage Account Blob Private DNS Zone
+  o	Log Analytics Workspace
+  o	Event Hub
+  o	Key Vault Private DNS Zone
+  o	Translator Private DNS Zone
+  o	Storage Account Blob Private DNS Zone
       
   •	Template assumes a virtual network already exists and is linked to the private DNS zones. 
   •	Subnet ID parameter must pertain to the linked virtual network for each private DNS zone. 
